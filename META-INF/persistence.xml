@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="persistenceUnit">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>ru.specialist.day8.jpa.model.CoursesEntity</class>
+        <class>ru.specialist.day8.jpa.model.HavingExEntity</class>
+        <class>ru.specialist.day8.jpa.model.LessonsEntity</class>
+        <class>ru.specialist.day8.jpa.model.TeachersEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/web"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="java"/>
+        </properties>
+    </persistence-unit>
+</persistence>
