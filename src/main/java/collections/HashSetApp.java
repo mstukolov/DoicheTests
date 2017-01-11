@@ -6,7 +6,9 @@ import java.util.*;
  * Created by Maxim on 11.01.2017.
  */
 public class HashSetApp {
-    /*Название Hash... происходит от понятия хэш-функция.Хэш-функция — это функция,
+    /*
+    Коллекция, в которой все элементы не упорядочены и уникальны.
+    Название Hash... происходит от понятия хэш-функция.Хэш-функция — это функция,
     сужающая множество значений объекта до некоторого подмножества целых чисел.
     Класс Object имеет метод hashCode(),
     который используется классом HashSet для эффективного размещения объектов, заносимых
@@ -34,5 +36,9 @@ public class HashSetApp {
         for(int i = 0; i < 1000; i++)
             numberSet.add(random.nextInt(10));
 
+        Iterator<Integer> numiterator = numberSet.iterator();
+        while (numiterator.hasNext()){
+            System.out.println(numiterator.next());
+        }
     }
 }
