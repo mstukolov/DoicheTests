@@ -1,6 +1,8 @@
 package collections;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Random;
 
 /**
  * Created by Maxim on 11.01.2017.
@@ -13,10 +15,28 @@ public class HashMapApp {
     Следует помнить, что для null-ключа hashCode() всегда равен нулю.*/
 
     public static void main(String[] args) {
-        HashMap<Integer, Integer> studentsHashmap = new HashMap<Integer, Integer>();
-        studentsHashmap.put(1, null);  // здесь все хорошо,
-        studentsHashmap.put(null, 2); // и здесь тоже все без проблем
+        HashMap<Integer, Integer> hashmap = new HashMap<Integer, Integer>();
+        hashmap.put(1, null);  // здесь все хорошо,
+        hashmap.put(null, 2); // и здесь тоже все без проблем
 
+        Random random = new Random(30);
+        for (int j = 0; j < 1000000; j++) {
+            hashmap.put(random.nextInt(), random.nextInt());
+        }
+        System.out.println("Inserted is Finished: " + Thread.currentThread().getName());
+
+
+        for (int i = 0; i < 100; i++) {
+
+            System.out.println("Начат перебор");
+            new Thread(()->{
+                System.out.println(Thread.currentThread().getName());
+
+                for (Integer key : hashmap.keySet()) {
+                    System.out.println(hashmap.get(key));
+                }
+            }).start();
+        }
 
     }
 
