@@ -38,5 +38,6 @@ public class LinkedListApp {
         states.remove("Германия");
         states.removeFirst(); // удаление первого элемента
         states.removeLast();  // удаление последнего элемента
+
     }
 }
