@@ -1,4 +1,4 @@
-package statics;
+package trash.statics;
 
 /**
  * Created by Maxim on 30.10.2016.

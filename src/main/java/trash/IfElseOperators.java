@@ -1,3 +1,5 @@
+package trash;
+
 import java.util.Scanner;
 
 /**

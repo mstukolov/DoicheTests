@@ -1,3 +1,5 @@
+package trash;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -16,8 +18,8 @@ public class LinkedVSArrayList {
         addToLists();
         setEndLists();
 
-       /* System.out.println(LinkedVSArrayList.arrayList);
-        System.out.println(LinkedVSArrayList.linkedList);*/
+       /* System.out.println(trash.LinkedVSArrayList.arrayList);
+        System.out.println(trash.LinkedVSArrayList.linkedList);*/
 
         //removeStartLists();
         //insertStartLists();

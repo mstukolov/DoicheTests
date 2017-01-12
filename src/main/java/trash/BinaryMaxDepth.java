@@ -1,4 +1,4 @@
-import com.sun.prism.shader.Solid_TextureYV12_Loader;
+package trash;
 
 /**
  * Данный класс реализует двоичное дерево поиска  с методоы для работы с ним.

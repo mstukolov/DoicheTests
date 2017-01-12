@@ -1,4 +1,4 @@
-package worksVsFinal;
+package trash.worksVsFinal;
 
 /**
  * Created by Maxim on 01.11.2016.
